@@ -1,0 +1,18 @@
+*Operación mania!masters
+Fecha-entrega: undefined
+
+**Idea principal
+- Sitio para mejorar tus habilidades motoras finas, como también destreza ritmica
+por medio de actividades recreativas y competitivas.
+
+**Ideas secundarias
+*** Sistema de ranking: Software conectado a la API de puntuaciones locales de osu
+                        en la cual se registraran los mejores intentos de los usuarios
+
+*** Modo duelo: Layout visible y a tiempo real del gameplay de ambos pc en una tercera 
+                pantalla.
+
+*** Modo apuesta: Orden de canciones y precios para la apuesta de los usuarios.
+
+
+
