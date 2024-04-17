@@ -179,11 +179,26 @@ body{
     background:rgb(36,34,42);
     border: 10px solid purple;
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+    transition: 2s;
 }
+@keyframes changeBorderColor {
+    0% {
+      border-color: rgb(255, 0, 0); /* Color inicial: rojo */
+    }
+    50% {
+      border-color: rgb(0, 255, 0); /* Color intermedio: verde */
+    }
+    100% {
+      border-color: rgb(0, 0, 255); /* Color final: azul */
+    }
+  }
 .form:hover {
+    transition-duration: 2s;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 10px solid;
+    animation: changeBorderColor 2s infinite;
+    
 }
 .form .form-input{
     position: relative;
