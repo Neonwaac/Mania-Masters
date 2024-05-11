@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "juego.css">
+    <script src="../index.js"></script>
+    <link rel = "icon" href = "../assets/logo.png">
+
+    <title>osu!</title>
+</head>
+<body>
+    <div class = "page-top-bar">
+        <div class = "page-top-bar-content">
+            <div class = "logo-image"></div>
+            <div onclick = "gopage('../index.html')"class = "page-top-bar-text">inicio</div>
+            <div onclick = "gopage('./juego.html')"class = "page-top-bar-text">juego</div>
+            <div onclick = "gopage('./registrarse.html')"class = "page-top-bar-text">registrarse</div>
+            <div onclick = "gopage('./software.html')"class = "page-top-bar-text">software</div>
+        </div>
+    </div>
+    <div class="spinner" id="spinner" style="display: none;">
+        <div class="spinnerin"></div>
+    </div>
+    <div class = page-body>
+        <div class = "page-container-top-bar">
+            <div class = "logo-panel"></div>
+            <div class = "panel-text">game</div>
+        </div>
+        <div class = "page-container">
+            <div class = "page-container-left-side">
+                <div class = "header-sides-text">Si hablamos de un juego de ritmo, el primero tiene que ser siempre</div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style="background-image: url('../assets/osu.png')"></div>
+                    <div class = "divs-text">osu! desafía a los jugadores a seguir el ritmo de la música tocando, deslizando y girando objetos en la pantalla en sincronía con una canción, pero nosotros nos enfocamos en la modalidad de manía.</div>
+                </div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style ="background-image: url('../assets/patterns.png')"></div>
+                    <div class = "divs-text">los jugadores presionan teclas específicas en el momento justo para seguir el ritmo de la música. Se asemeja a juegos de teclado como "StepMania" o "Dance Dance Revolution"</div>
+                </div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style ="background-image: url(../assets/omm-cup.jpg)"></div>
+                    <div class = "divs-text">Apuesta, compite y gana interesantes premios, todo en osu!mania masters</div>
+                </div>
+            </div>
+            <div class = "page-container-right-side">
+                <div class = "header-sides-text">Mejores Jugadores</div>
+                <div onclick="openpage('https://www.youtube.com/@anti-dressurf')" class = "right-side-div">
+                    <div class = "rdivs-image" style = "background: url('../assets/dressurf.png'); background-size: cover;"></div>
+                    <div class = "rdivs-text">dressurf</div>
+                </div>
+                <div onclick="openpage('https://www.youtube.com/@bogeee')" class = "right-side-div">
+                    <div class = "rdivs-image" style = "background: url('../assets/bojii.png'); background-size: cover;"></div>
+                    <div class = "rdivs-text">bojii</div>
+                </div>
+                <div onclick="openpage('https://www.youtube.com/@myucchii')" class = "right-side-div">
+                    <div class = "rdivs-image" style = "background: url('../assets/myuka.png'); background-size: cover;"></div>
+                    <div class = "rdivs-text">Myuka</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

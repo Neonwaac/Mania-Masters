@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap');
+*{
+    size: 100%;
+}
+body{
+    margin: 0 auto;
+    background: rgb(28,27,23);
+}
+.page-top-bar {
+    width: 100%;
+    height: 6vh;
+    background: rgb(172,143,57);
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.page-top-bar-content{
+    margin: 0 auto;
+    display: flex;
+    gap: 2vh;
+}
+.logo-image{
+    width: 5vh;
+    height: 5vh;
+    background-image: url("../assets/logo.png");
+    background-position: center;
+    background-size: cover;
+}
+.page-top-bar-text {
+    color: white;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 5vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+.sel{
+    animation: rgb-effect 5s ease-in-out infinite;
+}
+@keyframes rgb-effect {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    25% {
+      color: rgb(255, 0, 0); /* Change the RGB values to your desired color */
+    }
+    50% {
+      color: rgb(0, 255, 4);
+    }
+    75%{
+        color: rgb(0, 255, 234);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.page-top-bar-text:hover {
+   color: rgb(255,217,102);
+}
+.page-body {
+    width: 100%;
+    height: 100%;
+    background: rgb(28,27,23);
+    padding-top: 6vh;
+}
+.page-container{
+    margin: 0 auto;
+    background: rgb(42,40,34);
+    max-width: 100vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-container-top-bar{
+    margin: 0 auto;
+    max-width: 100vh;
+    height: 6vh;
+    background: rgb(61,56,41);
+    display: flex;
+    gap: 1vh;
+}
+
+.logo-panel{
+    background: url("../assets/tuerca.png");
+    height: 6vh;
+    width: 6vh;
+    background-position: center;
+    background-size: cover;
+    margin-left: 2vh;
+}
+.panel-text{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 6vh;
+}
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vh;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;;
+    background: rgb(56,54,46); 
+}
+.videov{
+    width: 70vh;
+    height: 40vh;
+}
+.videot{
+    width: 100%;
+    height: 2vh;
+    margin-top: -4vh;
+    color: white;
+    font-family: 'Play', sans-serif;
+    padding: 2vh;
+}
+@media screen and (max-width: 700px) {
+    .page-container {
+        width: 100%;
+      flex-direction: column;
+    }
+    .page-container-top-bar{
+        width: 100%;
+    }
+    .video-container{
+        width: 45vh;
+    }
+}

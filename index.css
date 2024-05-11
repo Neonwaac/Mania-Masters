@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap');
+*{
+    size: 100%;
+}
+body{
+    margin: 0 auto;
+    background: rgb(24,23,28);
+}
+.page-top-bar {
+    width: 100%;
+    height: 6vh;
+    background: rgb(86,57,172);
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.page-top-bar-content{
+    margin: 0 auto;
+    display: flex;
+    gap: 2vh;
+}
+.logo-image{
+    width: 5vh;
+    height: 5vh;
+    background-image: url("./assets/logo.png");
+    background-position: center;
+    background-size: cover;
+}
+.page-top-bar-text {
+    color: white;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 5vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+.sel{
+    animation: rgb-effect 5s ease-in-out infinite;
+}
+@keyframes rgb-effect {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    25% {
+      color: rgb(255, 0, 0); /* Change the RGB values to your desired color */
+    }
+    50% {
+      color: rgb(0, 255, 4);
+    }
+    75%{
+        color: rgb(0, 255, 234);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.page-top-bar-text:hover {
+   color: rgb(140,102,255);
+}
+.page-body {
+    width: 100%;
+    height: 100%;
+    background: rgb(24,23,28);
+    padding-top: 6vh;
+}
+.page-container{
+    margin: 0 auto;
+    background: rgb(34,31,46);
+    max-width: 100vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+    .page-container {
+        width: 100%;
+      flex-direction: column;
+    }
+    .page-container-top-bar{
+        width: 100%;
+    }
+    .page-container-left-side {
+      
+      margin-left: -5vh;
+    }
+    .page-container-right-side {
+      width: 100%;
+    }
+    .left-side-div {
+      width: 100%;
+      width: 46vh;
+    }
+}
+.page-container-top-bar{
+    margin: 0 auto;
+    max-width: 100vh;
+    height: 6vh;
+    background: rgb(36,34,42);
+    display: flex;
+    gap: 1vh;
+}
+.logo-panel{
+    background: url("./assets/logo-panel.png");
+    height: 6vh;
+    width: 6vh;
+    background-position: center;
+    background-size: cover;
+    margin-left: 2vh;
+}
+.panel-text{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 6vh;
+}
+.page-container-left-side{
+    min-width: 65vh;
+}
+.page-container-right-side{
+    min-width: 30vh;
+    padding: 1vh;
+}
+.header-sides-text{
+    width: 100%;
+    color: rgb(194,184,224);
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 6vh;
+    margin-left: 2vh;
+    margin: 0vh 0vh 0vh 5vh;
+}
+.left-side-div{
+    max-width: 60vh;
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vh 1vh 1vh 5vh;
+    background: rgb(48,46,56);
+    transition-duration:0.2s;
+}
+.left-side-div:hover{
+    transition-duration:0.2s;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.500);
+
+}
+.divs-image{
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+}
+.right-side-div{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(24,23,28);
+    margin-bottom: 1vh;
+    cursor: pointer;
+    transition-duration:0.2s ;
+}
+.right-side-div:hover{
+    transition-duration:0.2s ;
+    transform: scale(1.02);
+}
+.divs-text{
+    width: 100%;
+    color: white;
+    font-family: 'Play', sans-serif;
+    padding: 1vh;
+}
+.rdivs-image{
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+}
+.rdivs-text{
+    width: 100%;
+    color: white;
+    font-family: 'Play', sans-serif;
+    padding: 1vh;
+}

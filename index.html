@@ -2,54 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "index.css">
     <script src="index.js"></script>
-    <link rel = "icon" href = "./assets/logo-icon.png">
-    <title>mania!masters</title>
+    <link rel = "icon" href = "./assets/logo.png">
+
+    <title>Inicio</title>
 </head>
 <body>
-    <div class = "white-top-column">
-        <div class="white-top-column-option"><h2 class="white-top-column-text" onclick="scrollToSection('info')">Información</h2></div>
-        <div class="white-top-column-option"><h2 class="white-top-column-text" onclick="scrollToSection('osumania')">Osu!mania</h2></div>
-        <div class="white-top-column-option"><h2 class="white-top-column-text" onclick="scrollToSection('registro')">Registrate</h2></div>
-        <div class="white-top-column-option"><h2 class="white-top-column-text" onclick="scrollToSection('contacto')">Contacto/Soporte</h2></div>
-        <div class="white-top-column-option"><h2 class="white-top-column-text" onclick="scrollToSection('software')">Software</h2></div>
+    <div class = "page-top-bar">
+        <div class = "page-top-bar-content">
+            <div class = "logo-image"></div>
+            <div onclick = "gopage('./index.html')"class = "page-top-bar-text">inicio</div>
+            <div onclick = "gopage('./navigation/juego.html')"class = "page-top-bar-text">juego</div>
+            <div onclick = "gopage('./navigation/registrarse.html')"class = "page-top-bar-text">registrarse</div>
+            <div onclick = "gopage('./navigation/software.html')"class = "page-top-bar-text">software</div>
+        </div>
     </div>
-    <div class = "container">
-        <div id = "info" class = "info">
-            <div class = "img-container">
-                <div class = "logo-img"></div>
+    <div class = page-body>
+        <div class = "page-container-top-bar">
+            <div class = "logo-panel"></div>
+            <div class = "panel-text">panel</div>
+        </div>
+        <div class = "page-container">
+            <div class = "page-container-left-side">
+                <div class = "header-sides-text">Hola!</div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style="background-image: url('./assets/hi-image.png')"></div>
+                    <div class = "divs-text">Somos osu!mania masters, un emprendimiento dedicado a fomentar entre los jóvenes putumayenses la agilidad y precisión de una manera divertida y dinámica.</div>
+                </div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style ="background-image: url('./assets/esports.png')"></div>
+                    <div class = "divs-text">Nuestro objetivo es crear un espacio recreativo/competitivo en el cual pasar un buen rato con amigos, como también descubrir nuevos talentos para este deporte electrónico “E-Sport”.</div>
+                </div>
+                <div class = "left-side-div">
+                    <div class = "divs-image" style ="background-image: url(./assets/omm-cup.jpg)"></div>
+                    <div class = "divs-text">Apuesta, compite y gana interesantes premios, todo en osu!mania masters</div>
+                </div>
             </div>
-            <div class="titulo-container">
-                <h2>Bienvenido a Osu!mania Masters</h2>
+            <div class = "page-container-right-side">
+                <div class = "header-sides-text">Developers</div>
+                <div onclick = "openpage('https://github.com/Neonwaac')"class = "right-side-div">
+                    <div class = "rdivs-image" style = "background: url('./assets/neonwaac.png'); background-size: cover;"></div>
+                    <div class = "rdivs-text">Neonwaac</div>
+                </div>
+                <div onclick="openpage('https://github.com/FelipeFajardo1')"class = "right-side-div">
+                    <div class = "rdivs-image" style = "background: url('./assets/filipo.png'); background-size: cover;"></div>
+                    <div class = "rdivs-text">FelipeFajardo1</div>
+                </div>
             </div>
         </div>
-        <div class = "info2">
-            <div class = "parrafos">
-                En Osu!mania Masters, nos dedicamos a ofrecer una experiencia emocionante y desafiante para los amantes del juego Osu!mania. 
-            </div>
-            <div class = "parrafos">
-                Únete a nosotros y sumérgete en el mundo de Osu!mania. ¡Desafía tus límites, domina el ritmo y conviértete en un verdadero maestro de Osu!mania!
-            </div>
-        </div>
-        <div id = "osumania" class = "osumania">
-            <div class = "logo-osu"></div>
-            <div class = "parrafo-osu">Osu!mania es una modalidad de juego dentro de Osu! donde los jugadores presionan cuatro teclas al ritmo de la música que cae en la pantalla. El objetivo es coordinar los movimientos para obtener la puntuación más alta mientras completan la canción. Es un desafío de coordinación y precisión.</div>
-            <iframe class = "video-osu" src="https://www.youtube.com/embed/NuEOSh2JOPI?si=fmZMRrgOVLR2vLlb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div id = "registro" class = "registro">
-            <div class = "form">
-                <h2>Registrate</h2>
-                <div class = "form-input"> <input id = "name" placeholder="Nombre o Username"></input></div>
-                <div class = "form-input"> <input id = "userid" placeholder="Cedula"></input></div>
-                <button class = "form-button" id = "send-data">Enviar</button>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </div>
 </body>
 </html>
