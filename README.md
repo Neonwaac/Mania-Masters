@@ -16,6 +16,7 @@ Osu!mania Masters es una plataforma dedicada a los amantes del juego Osu!mania, 
 
 ¡Es fácil empezar a jugar en Osu!mania Simplemente regístrate en nuestra plataforma, descarga el juego Osu!mania y ¡comienza a desafiar tu ritmo!
 - Puedes descargar osu! directamente haciendo click [aquí](https://osu.ppy.sh/home/download)
+- Registrate en nuestra pagina haciendo click [aquí](https://mania-masters.vercel.app)
 
 ## Contribución
 
